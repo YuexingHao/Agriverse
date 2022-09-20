@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html">Agriverse Home</a>
+    <a href="camera_files.html">Camera Files</a>
+  </div>
+
+  <a class="float">
+    <i onclick="window.print()" class="fa" style="font-size:28px;">🖨</i> 
+  </a>    
+  
+  <div class="row">
+    <div class="column left" style="background-color:#f2f8f2;">
+    <span onclick="openNav()">&#9776; Menu</span>
+    <h2>Dashboard 🐄</h2> 
+    
+    <div class="card shadow2"> 
+    <div>
+      <button type="button" class="collapsible"><div class="tooltip"><font size = "3.8%">Weather Conditions</font>
+        <span class="tooltiptext">Click on it to see the details.</span></div></button>
+      <div class="content">
+        <p>❄️ Snowy / 32°F<br>
+        </p>
+      </div>
+    </div>
+    </div>
+
+  <div class="card shadow2">
+      <div>
+      <button type="button" class="collapsible"><div class="tooltip"><font size = "3.8%">Barn Status</font>
+        <span class="tooltiptext">Click on it to see the details.</span></div></button>
+      <div class="content">
+        <p>🌡️ Temperature: Normal ✅<br>
+        </p>
+        <p>📡 Humidity: Low ❗<br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card shadow2">
+      <div>
+      <button type="button" class="collapsible"><div class="tooltip"><font size = "3.8%">Sprinklers Frequency</font>
+        <span class="tooltiptext">Click on it to see the details.</span></div></button>
+      <div class="content">
+        <p>💦 Auto</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card shadow2">
+      <div>
+      <button type="button" class="collapsible"><div class="tooltip"><font size = "3.8%">Sensors Status</font>
+        <span class="tooltiptext">Click on it to see the details.</span></div></button>
+      <div class="content">
+        <p>🔋 Electric Level: Normal</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card shadow2">
+      <div>
+      <button type="button" class="collapsible"><div class="tooltip"><font size = "3.8%">Settings</font></div>
+
+      </button><button id = "full_Btn" class="button button2" >Settings Details</button>
+      
+    <!-- Trigger/Open The Modal -->
+
+    <!-- The Modal -->
+    <div id="full_Modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="full_close">&times;</span>
+        <p>Real-time Camera and THI sensors</p>
+      </div>
+    </div>
+
+    </div>
+  </div>
+      
+  </div>
+
+
+<div class="column right" style="background-color:#eef0ee;">
+
+    <h2>Welcome back, Agriversers~ 👋</h2> 
+
+    <div class="card shadow2">
+      <table>
+        <thead>
+        <tr>
+          <th style="font-size: 120%; color: grey; width: 33%" >Water Usage</th>
+          <th style="font-size: 120%; color: grey; width: 35%" >Water Saved</th>
+          <th style="font-size: 120%; color: grey; width: 30%" >Sprinklers</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr>
+          <td style="font-size: 28px; ">2,323 gal</td>
+          <td style="font-size: 28px">519 gal</td>
+          <td style="font-size: 28px">30 cycles</td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+    
+
+    <div class="card shadow2">
+    <p style="color: black; font-size: 15px;">Below table displays the real-time images from the farm. </p>
+      <table>
+        <thead>
+        <tr>
+          <th style="font-size: 120%; color: grey; width: 35%" >Dairy Health Summary 📔</th>
+          <th style="font-size: 120%; color: grey; width: 30%" >Live Camera #1 📷</th>
+          <th style="font-size: 120%; color: grey; width: 33%" >Live Video #2 📹</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr>
+          <td>            
+              <table>
+                <thead>
+                  <tr>
+                    <th style="font-size: 15px;" >Total Cows</th>
+                    <th style="font-size: 15px;" >Total Milk Production (Until Now)</th>
+                  </tr>
+                </thead>
+                  <tbody >
+                    <tr>
+                      <td style="font-size: 15px">680</td>
+                      <td style="font-size: 15px; ">273 gal</td>
+                    </tr>
+                  </tbody>
+              </table>
+              <br>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th style="font-size: 15px;" >Teat Location</th>
+                    <th style="font-size: 15px;" >Average Score</th>
+                  </tr>
+                </thead>
+                  <tbody >
+                    <tr>
+                      <td style="font-size: 13px">Teat 1</td>
+                      <td style="font-size: 13px; ">4.73</td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 13px">Teat 2</td>
+                      <td style="font-size: 13px; ">4.82</td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 13px">Teat 3</td>
+                      <td style="font-size: 13px; ">4.21</td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 13px">Teat 4</td>
+                      <td style="font-size: 13px; ">4.36</td>
+                    </tr>
+                  </tbody>
+              </table>
+          </td>
+          <td style="font-size: 28px; "><img src="https://drive.google.com/uc?export=view&id=14Q-0aCv1mFEs30lfUJCJzz5BeFgl17xt" alt="Dairy Animal's Teats" style="width:220px;height:276px;"></td>
+          <td style="font-size: 28px; ">
+            <video width = "230" height= "276" controls>
+                <source src="https://drive.google.com/uc?export=download&id=1KmWaR85OxseDdceePfJJA5Uax-tf8MUG" type='video/mp4'>
+            </video>
+          </td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+
+</div>
+
+
+<script type = "text/javascript" src="function.js">
+</script>
+
+</body>
+</html>
