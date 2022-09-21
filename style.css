@@ -97,15 +97,15 @@ p { margin-top: 5px; margin-bottom: 5px; font-size: 15px;}
   width: 43%;
   height: auto;
   background-color: #white;
-}
+} 
 
 .left{
-  width: 30%;
+  width: 23%;
   border-radius: 12px;
 }
 
 .right {
-  width: 70%;
+  width: 76%;
   border-radius: 12px;
 }
 
@@ -620,6 +620,11 @@ boldFont {
 
 .shadow2 { 
   box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+}
+
+.shadow3 { 
+  background-color: #ddd;
+  box-shadow: 0 7px 10px -10px rgba(150,170,180,0.5);
 }
 
 .styled-table {
